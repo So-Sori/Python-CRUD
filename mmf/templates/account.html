@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+        
+{% block content%} 
+    <div class="contenedor-datos">
+
+        <div class="foto-perfil">
+           <img src=" {{ current_user.image_perfil}}" alt="">
+        </div>
+        <div class="datos-personales">
+            <p class="text">Esta hermosura se llama:</p>
+            <p class="text-datos">{{ current_user.nombre}}</p>
+        </div>
+
+    </div>
+
+    <div class="contenedor">
+        <form method="post" action="">
+            {{ form.hidden_tag() }}
+    
+            <legend class="title-form">Editar Perfil</legend>
+    
+            <div class="form-section">
+                {{ form.nombre_viejo.label(class = 'titulo') }}
+                {{ form.nombre_viejo(class = 'btn-form') }}
+            </div>
+
+            <div class="form-section">
+                {{ form.nuevo_nombre.label(class = 'titulo') }}
+                {{ form.nuevo_nombre(class = 'btn-form') }}
+            </div>
+
+            <div class="form-section">
+                {{ form.submit(class = 'submit-form') }}
+            </div>
+        </form>
+        
+    <script src=" {{url_for('static',filename='main.js')}} "></script>
+ 
+{% endblock content%}

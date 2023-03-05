@@ -1,0 +1,85 @@
+{% extends 'banner_home.html' %}
+
+
+{% block content %}
+    <section class="about">
+            <p class="star">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐</p>
+
+            <h2>Brillemos juntos</h2>
+
+            <p class="texto">Hola hermosa estrella mi nombre es Soribel y hoy vengo a presentarse un lugar donde puedes hacerte conocer ¿porque? te preguntaras, sencillo todos en este mundo somos especiales a nuestra manera, QUE EL MUNDO LO VEA!!!, Comparte tus aventuras, logros o lo que te gusta de ti. Aqui lo que importa es que seas tu.</p>
+            
+            <p  class="star">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐</p>
+    </section>
+
+    <section class="option op1">
+        <div class="head">
+    
+            <img src="{{ url_for('static',filename= 'MMF.png') }}" alt="Personas o Cosas" class="horizontal">
+    
+            <h2>Daniel Day Lewis Santos</h2>
+        </div>
+
+        <div class="body">
+
+            <p class="datos">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <img src="{{ url_for('static',filename= 'MMF.png') }}" alt="Personas o Cosas" class="vertical">
+            
+        </div>
+        
+        <div class="footer">
+            <div class="parrafo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam nulla numquam voluptatibus nemo, provident sed sunt. Quia, provident blanditiis.</p>
+            </div>
+            <img src="{{ url_for('static',filename= 'MMF.png') }}" alt="Personas o Cosas" class="horizontal">
+        </div>
+
+
+    </section>
+
+    <section class="option op2">
+        
+        <div class="textos">
+            <h2>Laurence Olivier Esther</h2>
+            <p class="datos">Lorem ipsum dolor, sit amet consectetur adipisicing 
+            </p>
+            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius necessitatibus ipsa, nihil dignissimos a consectetur accusantium qui excepturi nostrum nulla.</p>
+        </div>
+        <div class="imagenes">
+
+            <div class="twoup">
+
+                <div class="img1">
+                    <img src="{{ url_for('static',filename= 'MMF.png') }}" alt="Personas o Cosas">
+                </div>
+    
+                <div class="img2">
+                    <img src="{{ url_for('static',filename= 'MMF.png') }}" alt="Personas o Cosas">
+                </div>
+            </div>
+
+            <div class="twodown">
+
+                <div class="img3">
+                    <img src="{{ url_for('static',filename= 'MMF.png') }}" alt="Personas o Cosas">
+                </div>
+    
+                <div class="img4">
+                    <img src="{{ url_for('static',filename= 'MMF.png') }}" alt="Personas o Cosas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="option op3">
+        <div class="textos">
+            <h2>Name</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repudiandae assumenda nostrum nam voluptas ipsam, delectus quod consectetur illum neque.</p>
+        </div>
+        <div class="imagenes">
+            <img class="img-big" src="{{ url_for('static',filename= 'MMF.png') }}" alt="Personas o Cosas">
+            <img class="img-small" src="{{ url_for('static',filename= 'MMF.png') }}" alt="Personas o Cosas">
+        </div>
+    </section>
+
+{% endblock content %}

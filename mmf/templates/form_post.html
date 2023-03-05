@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<form action="/uploader" method="post" enctype="multipart/form-data">
+    <label>Sube imagenes</label>
+    <input type="file" name= 'archivo' value="Files" accept="image/png, image/jpeg, image/jpg">
+    <button type="submit">Imagenes</button>
+</form>
+{% endblock content %}

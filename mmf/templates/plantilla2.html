@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="contenedor">
+    <form method="post" action="/plantilla2" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+    
+            <legend class="title-form">Crea tu momento</legend>
+    
+            <div class="form-section">
+                {{ form.crear_name.label(class = 'titulo') }}
+                {{ form.crear_name(class = 'btn-form') }}
+            </div>
+    
+            <div class="form-section">
+                {{ form.crear_datos.label(class = 'titulo') }}
+                {{ form.crear_datos(class = 'btn-form text-area') }}
+            </div>
+
+            <div class="form-section">
+                <input type="file" name= 'archivo' value="Files" accept="image/png, image/jpeg, image/jpg">
+                <input type="file" name= 'archivo' value="Files" accept="image/png, image/jpeg, image/jpg">
+                <input type="file" name= 'archivo' value="Files" accept="image/png, image/jpeg, image/jpg">
+                <input type="file" name= 'archivo' value="Files" accept="image/png, image/jpeg, image/jpg">
+            </div>
+    
+            <div class="form-section">
+                {{ form.submit(class = 'submit-form') }}
+            </div>
+    
+        </form>
+    </div>
+{% endblock content %}
